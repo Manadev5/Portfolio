@@ -24,13 +24,18 @@ import liblivre from '../Assets/screen-librarie/livre.png';
 export const Datas  = [
     {
         id: '1',
-        title : 'Booki : Agence des voyages',
+        title : 'Site Booki : Agence des voyages',
         cover : bookimain,
         images : [
+            bookimain,
               bookicenter,
               bookifooetr,
               bookiheader
-        ]
+        ],
+        description: 'Site créé en HTML5 et CSS3 rappresentant une agence des voyages, on peut voir les hebergément disponible à marseille avec leur notation et la popolarité',
+        competences : [ 'responsive design', 'display flex', 'display grid', 'figma'],
+        problems: 'disposition et mise en place dans la section des cartes resolu avec display gird et flex',
+        link:'https://github.com/Manadev5/Projet-booki.git'
     },
     {
         id :'2',
@@ -41,19 +46,27 @@ export const Datas  = [
               Sophlogin,
               Sophedition,
               Sophmodale
-        ]
+        ],
+        description: 'Site realisé en HTML5, CSS3 et JavaScript pour une architcte (Sophie bluel) montrant ces ouvres en plus il y a une page utilisateur où la propretere du site eut odifier les images present sur le site',
+        competences : ['utilisation fetch','requetes HTTP', 'gestion evennement'],
+        problems: 'creation de la modale et la dynamicité su site resolu avec addEventListener  ',
+        link:'https://github.com/Manadev5/Projet-architecte.git'
 
     },
     {
         id:'3',
-        title : "Kasa : location d'appartements",
+        title : "Site Kasa : location d'appartements",
         cover : kasamain,
         images : [
               kasaccueil,
               kasaccueil1,
               kasapropos,
               kasalogement
-        ]
+        ],
+        description : "Site créé avec React.js contenant aussi de animations et l'utilisation du scss pour le style, le site donne la posibilité au privé de voir et de louér des appartements",
+        competences :['utilisation composants', 'Hooks', 'animation CSS'],
+        problems:'Gestion des composants avec les pages dsu site resolu avec les props et avec les state',
+        link:'https://github.com/Manadev5/Projet-Kasa.git'
 
     },
     {
@@ -65,7 +78,11 @@ export const Datas  = [
              liblogin,
              libcreate,
              liblivre
-        ]
-    }
+        ],
+        description: "Site appartenant à une bibliothéque 'Mon vieux grimore' réalisé de coté  backend en JavaScript, en partant dans le frontend  réalisé en React.js",
+        competences : ['routes HTTP', 'base de données', 'MongoDb', 'utilisation des package'],
+        problems: 'Gestion des controlleurs appartenatns aux routes resolu avec le propriété de resonses et requete',
+        link:'https://github.com/Manadev5/Projet-architecte.git'
+    },
 ]
 

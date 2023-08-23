@@ -1,3 +1,10 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 1580px;
+    width: 100%;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -5,6 +12,7 @@ header {
     width: 100%;
     height: 109px;
     background-color: white;
+    margin-bottom: 0px;
 }
 
 img{
@@ -22,7 +30,7 @@ li a{
     color: black;
     text-decoration: none;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: large;
+    font-size: 20px;
 }
 li a:hover{
     border: solid black 1px;
@@ -35,7 +43,7 @@ li a:hover{
 
 #Accueil{
     background-image: linear-gradient( to bottom,rgba(0, 0, 0, 0.5), rgba(3, 3, 3, 0.5)),url(../../Assets/main-image.jpg);
-    height: 800px;
+    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
   
@@ -58,6 +66,7 @@ h1{
     font-size: 70px;
     width: 90%;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0px;
 
     &{
         animation: flicker-in-1 4s linear both;
@@ -162,33 +171,44 @@ h1{
     padding: 60px;
 }
 
-.block{
+#Competences div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.block ul{
+#Competences ul{
     display: flex;
     flex-direction: column;
     color: white;
     gap:20px;
 }
 
-.block ul li{
+#Competences ul li{
     text-decoration: overline;
     font-size : 18px;
     font-style: italic;
 }
 
+footer{
+    padding-top: 3%;
+    background-color: black;
+  
+}
+
+footer h2{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
 
 #contacts{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    background-color: black;
-    padding-top: 40px;
-    padding-left: 50px;
+    align-items: flex-start;
+    padding-top: 5%;
+    padding-left: 20%;
+   
 }
 
 #contacts div{
@@ -203,12 +223,20 @@ h1{
     margin-right: 30%;
 }
 
-.email , .github{
+.github{
     margin-right: 34%;
+}
+
+.email {
+    padding-right: 30px;
 }
 
 #contacts div p{
     color: white;
+}
+
+.linkedin{
+    padding-left: 4%;
 }
 
 .github, .linkedin{
@@ -227,27 +255,209 @@ h1{
 #projets{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10%;
 }
 
 #projets h2{
     text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .images{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:30px;
+
+    margin-left: 12%;
+    margin-bottom: 40px;
 }
 
 .image-container{
-    width: 40%;
-    height: 300px;
+    width: 100%;
+    cursor: pointer;
+    
 }
 
-.image-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.image-container h3{
+    margin-left: 25%;
+    font-size: 30px;
+}
+
+.image-container h4{
+    margin-left: 20%;
+    width: 40%;
+    text-align: center;
+}
+
+.title-comp{
+    margin-left: 25%;
+    font-size: 30px;
+}
+
+.image-container ul{
+    display: flex;
+    flex-direction: column;
+    margin-right: 22% ;
+    text-align: center;
+    gap: 20px;
+
+}
+
+.image-container p{
+    margin-left: 18%;
+}
+
+
+.image-container li{
+    margin-bottom: 10px;
+}
+.image-slider{
+    width: 80%;
+    height: 600px;
+   object-fit: cover;
+   border: 1px solid white;
+    border-radius: 25px;
+    object-fit: contain;
+   
+}
+
+.vector-left, .vector-right {
+    width: 30px;
+    height: 40px;
+    background-color: black;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.vector-left{
+    position: absolute;
+    left: 21%;
+    top: 320%;
+}
+
+.vector-right{
+    position: absolute;
+    left: 79%;
+    top: 320%;
+}
+
+@media screen and (max-width: 900px) {
+    main{
+        overflow-x: hidden;
+    }
+   
+    header{
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+
+
+    header li{
+        font-size: medium;
+        width:auto;
+    }
+
+    #A-propos img{
+        margin-left: 41%;
+    }
+
+    #A-propos p{
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    .vector-left,.vector-right{
+        top: 275%;
+    }
+
+    .image-container h3{
+      margin-left: 13%;
+    }
+
+    .image-container ul{
+        margin-right: 25%;
+    }
+
+    .image-container p{
+        width: 50%;
+        text-align: center;
+        margin-left: 16%;
+    }
+
+    #contacts{
+        padding-left: 15%;
+    }
+
+    .telephone{
+        margin-right: 90px;
+    }
+
+
+    .github{
+        margin-right: 27%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    header{
+        justify-content: none;
+        margin-left: 0;
+    }
+    
+    header ul{
+        gap: 40px;
+    }
+
+    #Accueil h1{
+    margin-left: 15px;
+    }
+
+    #Competences{
+        flex-direction: column;
+        align-items: start;
+        margin-left: 30%;
+    }
+
+    #Competences img{
+        width: 100px;
+        height: 120px;
+    }
+
+    #Competences div{
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    #Competences div li{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .block-2 img{
+        padding-left: 55px;
+    }
+
+    #contacts{
+        flex-direction: column;
+        align-items: baseline;
+        align-content: center;
+        padding-left: 20%;
+
+    }
+    
+    #contacts img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #contacts p{
+          font-size: 20px;
+    }
+
+    #projets h2{
+        margin-bottom: 20%;
+    }
+
+    .vector-left, .vector-right{
+        top: 365%;
+    }
 }
