@@ -37,8 +37,15 @@ return(
         </div>
 
         <h3>{Datas[index].title}</h3>
-        <h4>{Datas[index].description}</h4>
+        <h4 className="description">{Datas[index].description}</h4>
+
+        <div className="link">
+        <h4 className="link-title">Lien github :</h4>
+        <a href ={Datas[index].link}> cliquer ici</a>
+        </div>
+
         <h4 className="title-comp">Compétences aquises</h4>
+        
         <ul>
           {Datas[index].competences.map((text) =>( <li>{text}</li> ))}
         </ul>
