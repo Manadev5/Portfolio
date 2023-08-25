@@ -320,14 +320,15 @@ footer h2{
 .link-title{
    width: 12%;
 }
+
+.slider{
+    display: flex;
+    margin-left: 25%;
+}
 .image-slider{
-    width: 80%;
+    width: 400px;
     height: 600px;
-   object-fit: cover;
-   border: 1px solid white;
-    border-radius: 25px;
-    object-fit: contain;
-   
+   object-fit: contain; 
 }
 
 .vector-left, .vector-right {
@@ -393,6 +394,18 @@ footer h2{
         margin-left: 16%;
     }
 
+    .title-comp{
+        margin-left: 20%;
+    }
+
+    .link-title{
+        width: 20%;
+    }
+
+    .slider{
+        margin-left: 18%;
+    }
+
     #contacts{
         padding-left: 15%;
     }
@@ -423,8 +436,8 @@ footer h2{
 
     #Competences{
         flex-direction: column;
-        align-items: start;
-        margin-left: 30%;
+        align-items: flex-start;
+     margin-left: 20%;
     }
 
     #Competences img{
@@ -444,6 +457,26 @@ footer h2{
 
     .block-2 img{
         padding-left: 55px;
+    }
+
+    .image-container h3{
+        margin-left: 0;
+    }
+
+    .title-comp{
+        margin-left: 10%;
+    }
+
+    .link{
+        margin-left: 20%
+    }
+
+    .link-title{
+        width: 30%;
+    }
+
+    .slider{
+        margin-left: 8%;
     }
 
     #contacts{
@@ -468,6 +501,6 @@ footer h2{
     }
 
     .vector-left, .vector-right{
-        top: 365%;
+        top: 370%;
     }
 }

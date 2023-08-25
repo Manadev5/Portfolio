@@ -44,10 +44,10 @@ return(
         <a href ={Datas[index].link}> cliquer ici</a>
         </div>
 
-        <h4 className="title-comp">Compétences aquises</h4>
+        <h4 className="title-comp">Technologies employées</h4>
         
         <ul>
-          {Datas[index].competences.map((text) =>( <li>{text}</li> ))}
+          {Datas[index].competences.map((text) =>( <li key ={text + Math.random }>{text}</li> ))}
         </ul>
         <h4 className="title-comp">Problémes & solutions</h4>
         <p>{Datas[index].problems}</p>
