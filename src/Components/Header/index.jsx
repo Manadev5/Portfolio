@@ -6,10 +6,10 @@ function header(){
      <header>
       <ul>
       <li><Link to= "">Accueil</Link></li>
-      <li><Link to="/#A-propos">À Propos</Link></li>
-      <li><Link to="/#section-competences">Compétences</Link></li>
-      <li><Link to="/#projets">Projets</Link></li>
-      <li><Link to="/#contacts">contact</Link></li>
+      <li><Link to="/Portfolio#A-propos">À Propos</Link></li>
+      <li><Link to="/Portfolio#section-competences">Compétences</Link></li>
+      <li><Link to="/Portfolio#projets">Projets</Link></li>
+      <li><Link to="/Portfolio#contacts">contact</Link></li>
       </ul>
     </header>
     )
