@@ -42,7 +42,7 @@ export const Datas  = [
         title : 'Potfolio architecte Sophie Bluel',
         cover : Sophscreen,
         images : [
-              Sophscreen,
+              Sophmain,
               Sophlogin,
               Sophedition,
               Sophmodale

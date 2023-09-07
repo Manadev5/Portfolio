@@ -1,15 +1,15 @@
-
+import { HashLink as Link } from 'react-router-hash-link'
 import '../Style/Home.css'
 
 function header(){
     return(
      <header>
       <ul>
-      <li><a href="#Accuel">Accueil</a></li>
-      <li><a href="#A-propos">À Propos</a></li>
-      <li><a href="#section-competences">Compétences</a></li>
-      <li><a href="#projets">Projets</a></li>
-      <li><a href="#contacts">contact</a></li>
+      <li><Link to= "">Accueil</Link></li>
+      <li><Link to="/#A-propos">À Propos</Link></li>
+      <li><Link to="/#section-competences">Compétences</Link></li>
+      <li><Link to="/#projets">Projets</Link></li>
+      <li><Link to="/#contacts">contact</Link></li>
       </ul>
     </header>
     )
