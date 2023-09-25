@@ -29,15 +29,17 @@ return(
  
   
     <div key ={Datas.id} className="image-container" >
+      <div className="slider">
         <img src = {Left} alt='vector-left' onClick= {()  => (goBackward(index))}  className='vector-left'/>
-          <img src = {Right} alt='vector-right' onClick= {()  => (goForward(index))} className='vector-right'/>
-        <div className="slider">
+        <img src = {Right} alt='vector-right' onClick= {()  => (goForward(index))} className='vector-right'/>
           <img src = {Datas[index].cover} alt={Datas[index].title} className='image-slider'/>
+         
+          </div>
           
-        </div>
-
+        
+      <div className="content">
         <h3>{Datas[index].title}</h3>
-        <h4 className="description">{Datas[index].description}</h4>
+        <h5 className="description">{Datas[index].description}</h5>
 
         <div className="link">
         <h4 className="link-title">Lien github :</h4>
@@ -51,7 +53,7 @@ return(
         </ul>
         <h4 className="title-comp">Problémes & solutions</h4>
         <p>{Datas[index].problems}</p>
-
+        </div>
 
        
      
