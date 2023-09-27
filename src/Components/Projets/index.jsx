@@ -31,8 +31,10 @@ return(
     <div key ={Datas.id} className="image-container" >
       <div className="slider">
         <img src = {Left} alt='vector-left' onClick= {()  => (goBackward(index))}  className='vector-left'/>
-        <img src = {Right} alt='vector-right' onClick= {()  => (goForward(index))} className='vector-right'/>
+        
           <img src = {Datas[index].cover} alt={Datas[index].title} className='image-slider'/>
+
+          <img src = {Right} alt='vector-right' onClick= {()  => (goForward(index))} className='vector-right'/>
          
           </div>
           
