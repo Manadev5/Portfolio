@@ -20,7 +20,7 @@ function HomePage() {
 
    
       <div className="text-block">
-         <h1>Je suis Manassé Mukenge - développeur web frontend </h1>
+         <h1>Je suis Manassé Mukenge - développeur web fullstack junior </h1>
       </div>
 
     </section>

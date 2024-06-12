@@ -9,7 +9,7 @@ return(
     
     <section id ='section-competences' >
 
-   <h2 className='titre-3'> Mes competences</h2>
+   <h2 className='titre-3'> Mes compétences</h2>
 
    <div id="Competences">
 
@@ -20,26 +20,28 @@ return(
            <li>CSS3/SASS/SCSS</li>
            <li>JavaScript</li>
           <li>React.js</li>
+          <li>Angular</li>
        </ul>
      </div>
 
       <div className='block-2'>
         <img src= {backend} alt='backend-logo'/>
         <ul>
-          <li>JavaScript</li>
           <li>Node.js</li>
           <li>Express.js</li>
-        
+          <li>PHP</li>
+          <li>Symfony</li>
        </ul>
       </div>
 
      <div className='block-3'>
       <img src= {outils} alt='outils-logo'/>
-      <ul>
+      <ul> 
+        <li>Mysql</li>
         <li>MongoDb</li>
         <li>Visual Studio Code</li>
-        <li>Terminal/Npm</li>
-        <li>Github</li>
+        <li>Terminal</li>
+        <li>Docker</li>
         <li>Figma</li>
       </ul>
       </div>

@@ -74,27 +74,12 @@ h1{
 }
 
 @keyframes rotate{
-    0%{ transform: rotate(0turn)}
-    5%{transform: rotate(0.1turn);}
-    10%{transform: rotate(0.15turn)}
-    15%{transform: rotate(0.2turn)}
-    20%{transform: rotate(0.25turn)}
-    25%{transform: rotate(0.35turn)}
-    30%{transform: rotate(0.4turn)}
-    35%{transform: rotate(0.45turn)}
-    40%{transform: rotate(0.5turn)}
-    45%{transform: rotate(0.55turn)}
-    50%{transform: rotate(0.6turn)}
-    55%{transform: rotate(0.65turn)}
-    60%{transform: rotate(0.7turn)}
-    70%{transform: rotate(0.75turn)}
-    75%{transform: rotate(0.8turn)}
-    80%{transform: rotate(0.85turn)}
-    85%{transform: rotate(0.9turn)}
-    90%{transform: rotate(0.95turn)}
-    95%{transform: rotate(0.98turn)}
-    100%{transform: rotate(1turn);}
-
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
 }
 
 #A-propos img{
@@ -102,7 +87,7 @@ h1{
   width: 170px;
   height: 200px;
   &{
-    animation: rotate 3S cubic-bezier(.85,.03,0,-0.09) infinite ;
+    animation: rotate 3S linear infinite ;
   }
 }
 
@@ -151,18 +136,15 @@ h1{
     }
 }
 
-.titre-2{
+.titre-2, .titre-3{
     text-align: center;
     font-size: 40px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .titre-3{
-    color: white;
-    text-align: center;
+    color: white; 
     padding-top: 30px;
-    font-size: 40px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 #Competences{
@@ -201,7 +183,7 @@ footer{
 footer h2{
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 #contacts{
@@ -260,6 +242,7 @@ footer h2{
 }
 
 #projets h2{
+    font-size: 40px;
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -278,6 +261,8 @@ footer h2{
 
 .description{
     width: 40%;
+    font-weight: 500;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -303,10 +288,14 @@ footer h2{
     margin-bottom: 10px;
 }
 
-.link{
-    display: flex;
+.link a{
+    font-weight: 600;
     align-items: center;
-    gap: 20px;
+    color: black;
+}
+
+.link a:hover{
+    color: lightseagreen;
 }
 
 
@@ -472,7 +461,8 @@ footer h2{
     }
 
     #contacts div{
-        width: 50%;
+      width: 80%;
+      margin-left: 25%;
     }
     
     #contacts img{

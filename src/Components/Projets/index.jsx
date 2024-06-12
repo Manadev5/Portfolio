@@ -36,7 +36,7 @@ return(
 
           <img src = {Right} alt='vector-right' onClick= {()  => (goForward(index))} className='vector-right'/>
          
-          </div>
+      </div>
           
         
       <div className="content">
@@ -44,18 +44,10 @@ return(
         <h5 className="description">{Datas[index].description}</h5>
 
         <div className="link">
-        <h4 className="link-title">Lien github :</h4>
-        <a href ={Datas[index].link}> cliquer ici</a>
+          <a href ={Datas[index].link}>Voir le code sur github</a>
         </div>
 
-        <h4 className="title-comp">Technologies employées</h4>
-        
-        <ul>
-          {Datas[index].competences.map((text) =>( <li key ={text + Math.random }>{text}</li> ))}
-        </ul>
-        <h4 className="title-comp">Problémes & solutions</h4>
-        <p>{Datas[index].problems}</p>
-        </div>
+      </div>
 
        
      
