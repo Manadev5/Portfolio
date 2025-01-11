@@ -1,4 +1,4 @@
-import Tech from '../../Assets/tech.png';
+import logoComputer from '../../Assets/seo-2017000_640.png';
 
 function aPropos() {
 
@@ -8,7 +8,7 @@ return(
 
 <h2 className='titre-2'> À propos de moi </h2>
 
-<img src={Tech} alt ='tech'/>
+<img src={logoComputer} alt="pc-logo"/>
 
   <p>Passionné par la tech après le Bac j'ai voulu expérimenter quelque chose de nouveau dans ma vie.
     C'est en m'informant que j'ai connu le développement web, en voyant les lignes de code qui 

@@ -1,17 +1,19 @@
-import { HashLink as Link } from 'react-router-hash-link'
+import { HashLink as Link } from 'react-router-hash-link';
+import logoMe from '../../Assets/real-logo.png';
 import '../Style/Home.css'
 
 function header(){
     return(
-     <header>
+     <nav>
+      <img src={logoMe} alt="me-logo"/>
       <ul>
-      <li><Link to= "">Accueil</Link></li>
-      <li><Link to="/Portfolio#A-propos">À Propos</Link></li>
-      <li><Link to="/Portfolio#section-competences">Compétences</Link></li>
-      <li><Link to="/Portfolio#projets">Projets</Link></li>
-      <li><Link to="/Portfolio#contacts">contact</Link></li>
+        <li><Link to= "">Accueil</Link></li>
+        <li><Link to="/Portfolio#A-propos">À Propos</Link></li>
+        <li><Link to="/Portfolio#section-competences">Compétences</Link></li>
+        <li><Link to="/Portfolio#projets">Projets</Link></li>
+        <li><Link to="/Portfolio#contacts">contact</Link></li>
       </ul>
-    </header>
+    </nav>
     )
 }
 
