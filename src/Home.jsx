@@ -4,7 +4,6 @@ import APropos from "./Components/A-propos";
 import Projets from './Components/Projets';
 import {Datas} from './Datas/DataProjects';
 import Contact  from './Components/Contact';
-import logoComputer from './Assets/seo-2017000_640.png';
 import me from './Assets/me.png';
 import './Components/Style/Home.css';
 
