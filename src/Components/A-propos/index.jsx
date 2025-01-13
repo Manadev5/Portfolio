@@ -13,16 +13,15 @@ return(
     <h2 className='titre-2'> À propos de moi </h2>
 
     <p>
-      La passion pour la création d'interfaces, d'outils capables de fournir des prestations utiles paur les
-      autres et les nouvelles technologies sont les motivations qui m'ont poussent à enteprendrela carriere de 
-      déveleppeur.
-      Grâce aux formartions que j'ai integré pendant 4 ans  j'ai pu apprendre le langages: <strong>Javascript</strong>,  
-      <strong>Typescypt</strong> du coté frontend et <strong>PHP</strong>, <strong>C#</strong>, 
-      <strong>NodeJs</strong> du coté back-end. En tant que frameworks je metrise <strong>ReactJs</strong>, 
-      <strong>Angular</strong> du coté fron-tend et du coté backend<strong>Symfony</strong>, <strong>.Net</strong>
-      et <strong>ExpressJs</strong>. J'ai pu mettre mes compétences en pratique pendant un stage de 6 mois chez 
-      Youzer une entreprise qui proposé une solution IAM, une application de rencontre CSP+ pour le fondateur de
-      LesBigBoss et plusieurs projets disponibles sur mon profil github.   
+
+    Ma passion pour la création d'interfaces intuitives, d'outils innovants offrant des solutions 
+    utiles aux autres, ainsi que mon intérêt pour les nouvelles technologies, m'ont poussé à entreprendre 
+    une carrière de développeur web. 
+    Grâce aux formations que j'ai suivies pendant 4 ans, j'ai acquis des compétences dans plusieurs langages,
+    freameworks et j'ai expérimenté différents outils pour mettre en pratique mes connaissances. 
+    J'ai eu l'opportunité de mettre en pratique mes compétences lors d'un stage de 6 mois chez Youzer, 
+    une entreprise proposant une solution IAM, une application de rencontres CSP+ pour le fondateur de LesBigBoss,
+    ainsi que plusieurs autres projets disponibles sur mon profil GitHub.   
       
     </p>
     
