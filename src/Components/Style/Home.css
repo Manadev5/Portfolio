@@ -373,7 +373,7 @@ footer h2{
   
 
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
     main{
         overflow-x: hidden;
     }
@@ -423,7 +423,7 @@ footer h2{
 
 }
 
-@media screen and (max-width:550px) {
+@media(max-width:550px) {
     header{
         display: none;
         
