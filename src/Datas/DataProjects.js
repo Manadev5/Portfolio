@@ -39,7 +39,7 @@ export const Datas  = [
     },
     {
         id :'2',
-        title : 'Potfolio architecte Sophie Bluel',
+        title : 'Portfolio architecte Sophie Bluel',
         cover : Sophscreen,
         images : [
               Sophmain,
