@@ -3,7 +3,7 @@ import Right from '../../Assets/Vector-right.png'
 import Left from '../../Assets/Vector-left.png'
 function Projets({Datas }){
 
-  //   const [currentIndex, setCurrentIndex] = useState(0);
+     const [showdetails, setShowdetails] = useState(false);
    
   //   const goForward = (i) =>{
 
@@ -29,16 +29,21 @@ return(
 
       
   <div>  
-  <ul>{  Datas.map((data)=>(
-    <li>
-      <div>{data.title}</div>
+  <ul className="projects-list">{  Datas.map((data)=>(
+    <li className="full-item">
       <div>
+        <h3 className="item-title">{data.title}</h3>
+        
+      </div>
+      <div className={showdetails ? 'details': 'details-none'}>
         <img src={data.cover} alt ={data.title}/>
         <p>{data.description}</p>
       </div>
+      <div className="line-blue"></div>
     </li>
   ))}</ul>
 
+  {/* carrousel  */} 
   {/* <div key ={Datas.id} className="image-container" >
       <ul>
       </ul>
