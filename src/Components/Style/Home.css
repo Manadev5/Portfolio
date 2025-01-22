@@ -317,14 +317,28 @@ footer h2{
     margin-top: 50px;
 }
 
+.details-none{
+    display: none;
+}
 
+.details{
+    display: flex;
+}
+
+.projects-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .image-container{
     width: 100%;
 }
 
-.image-container h3{
+.item-title{
     font-size: 30px;
+    color:rgba(3, 5, 245, 0.93) ;
 }
 
 .description{
