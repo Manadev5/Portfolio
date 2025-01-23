@@ -84,5 +84,14 @@ export const Datas  = [
         problems: 'Gestion des controlleurs appartenatns aux routes resolu avec le propriété de resonses et requete',
         link:'https://github.com/Manadev5/Projet-architecte.git'
     },
+    {
+        id :'5',
+        title : "Dating App",
+        cover : libmain,
+        description: "Site appartenant à une bibliothéque 'Mon vieux grimore' réalisé de coté  backend en JavaScript, en partant dans le frontend  réalisé en React.js",
+        competences : ['Symfony', 'Anguar', 'Api-platform', 'mysql', 'mercure', 'stripe'],
+        problems: 'Gestion des controlleurs appartenatns aux routes resolu avec le propriété de resonses et requete',
+        link:'https://github.com/Manadev5/Projet-architecte.git'
+    }
 ]
 

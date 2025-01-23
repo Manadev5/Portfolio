@@ -11,13 +11,21 @@ const ListItem = ({ data }) => {
 
   return (
     <li className="full-item">
-      <div onClick={toggleDetails}>
-        <h3 className="item-title">{data.title}</h3>
+      <div>
+        <div className="title-icon">
+          <h3 className="item-title">{data.title}</h3>
+          <i className={showDetails? "fa-solid fa-minus" : "fa-solid fa-plus"} onClick={toggleDetails}></i>
+        </div>
+        <div className="blueline"></div>
       </div>
       {showDetails && (
         <div className="details">
-          <img src={data.cover} alt={data.title} />
           <p>{data.description}</p>
+          <ul className="comp-list">{
+            data.competences.map((data) => (
+              <li>{data}</li>
+            ))}
+          </ul>
         </div>
       )}
       <div className="line-blue"></div>
