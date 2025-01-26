@@ -1,9 +1,26 @@
+import { useState } from 'react';
 import github from '../../Assets/git-hub.png';
 import linkedin from '../../Assets/linkedin.png';
 import email from '../../Assets/logo-email.png';
 import telephone from '../../Assets/logo-telephone.png'
 
-function contact(){
+function Contact(){
+
+  const[name, setName] = useState('');
+  const[email, setEmail] = useState('');
+  const[message, setMessage] = useState('');
+
+  const service_Id ='';
+  const tempalte_Id ='';
+
+  const emailContent = {
+
+  };
+
+  const handleSubmit = () =>{
+
+  }
+
 
  return(
 
@@ -33,6 +50,17 @@ function contact(){
       </a>
     </div>
 
+    <form onSubmit={handleSubmit} id="contact-form" >
+        <input type="hidden" name="contact_number" value={name} onChange={(e) => setName(e.target.value)}/>
+        <label>Name</label>
+        <input type="text" name="user_name" value={email} onChange={(e) => setEmail(e.target.value)}/>
+        <label>Email</label>
+        <input type="email" name="user_email" value={message} onChange={(e) => setMessage(e.target.value)}/>
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send" />
+    </form>
+
 
   </div>
 
@@ -40,4 +68,4 @@ function contact(){
 
 }
 
-export default contact;
+export default Contact;
