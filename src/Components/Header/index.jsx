@@ -7,7 +7,7 @@ function header(){
      <nav>
       <img src={logoMe} alt="me-logo"/>
       <ul>
-        <li><Link to= "">Accueil</Link></li>
+        <li><Link to= "/Portfolio#Accueil">Accueil</Link></li>
         <li><Link to="/Portfolio#A-propos">À Propos</Link></li>
         <li><Link to="/Portfolio#section-competences">Compétences</Link></li>
         <li><Link to="/Portfolio#projets">Projets</Link></li>

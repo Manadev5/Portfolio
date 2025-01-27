@@ -7,7 +7,7 @@ function competences() {
 
 return(
     
-  <section id ='section-competences' >
+  <section id='section-competences' >
 
     <h2 className='titre-3'> Mes compétences</h2>
 

@@ -54,18 +54,13 @@ function HomePage() {
 
       <section id="projets">
 
-        <h2>Mes Projets</h2>
-
-        <div className='images'>
-        
+        <h2>Mes Projets</h2>   
         
           <Projets
 
               Datas ={Datas}
       
           />
-      
-        </div>
 
       </section>
 
