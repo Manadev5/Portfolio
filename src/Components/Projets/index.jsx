@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Right from '../../Assets/Vector-right.png';
-import Left from '../../Assets/Vector-left.png';
 
 const ListItem = ({ data }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -20,12 +18,15 @@ const ListItem = ({ data }) => {
       </div>
       {showDetails && (
         <div className="details">
+          <h4>Description :</h4>
           <p>{data.description}</p>
+          <h4>Technos :</h4>
           <ul className="comp-list">{
             data.competences.map((data) => (
               <li>{data}</li>
             ))}
           </ul>
+          <a href={data.link} target="blank">voir sur github</a>
         </div>
       )}
       <div className="line-blue"></div>
