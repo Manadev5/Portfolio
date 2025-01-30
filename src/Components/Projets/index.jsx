@@ -16,8 +16,7 @@ const ListItem = ({ data }) => {
         </div>
         <div className="blueline"></div>
       </div>
-      {showDetails && (
-        <div className="details">
+        <div className={ showDetails? "details" : "details-none"}>
           <h4>Description :</h4>
           <p>{data.description}</p>
           <h4>Technos :</h4>
@@ -28,7 +27,6 @@ const ListItem = ({ data }) => {
           </ul>
           <a href={data.link} target="blank">voir sur github</a>
         </div>
-      )}
       <div className="line-blue"></div>
     </li>
   );

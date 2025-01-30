@@ -38,6 +38,25 @@ function Contact(){
 
   }
 
+  const handleClick = (e) => {
+    const button = e.currentTarget;
+
+    // Crée l'effet d'onde
+    const ripple = document.createElement("span");
+    ripple.className = "ripple";
+
+    const rect = button.getBoundingClientRect();
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+
+    button.appendChild(ripple);
+
+    // Nettoyage de l'animation
+    setTimeout(() => {
+      ripple.remove();
+    }, 600);
+  };
+
 
  return(
 
@@ -48,7 +67,7 @@ function Contact(){
         <input type="text" name="user_name" value={name} onChange={(e) => setName(e.target.value)} placeholder='Nom'required/>
         <input type="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='E-mail' required/>
         <textarea name="message" value={message}  onChange={(e) => setMessage(e.target.value)} placeholder='Message' required></textarea>
-        <input type="submit" className='submit' />
+        <button type="submit" className='submit' onClick={handleClick}>valider</button>
       </form>
 
       <div className='contact-icons'>

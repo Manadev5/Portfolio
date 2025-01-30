@@ -23,35 +23,13 @@ import liblivre from '../Assets/screen-librarie/livre.png';
 
 export const Datas  = [
     {
-        id: '1',
-        title : 'Site Booki : Agence des voyages',
-        cover : bookimain,
-        images : [
-            bookimain,
-              bookicenter,
-              bookifooetr,
-              bookiheader
-        ],
-        description: 'Site créé en HTML5 et CSS3 rappresentant une agence des voyages, on peut voir les hebergément disponible à marseille avec leur notation et la popolarité',
-        competences : [ 'HTML5', 'figma', 'responsive design', 'CSS3'],
-        problems: 'disposition et mise en place dans la section des cartes resolu avec display gird et flex',
-        link:'https://github.com/Manadev5/Projet-booki.git'
-    },
-    {
-        id :'2',
-        title : 'Portfolio architecte Sophie Bluel',
-        cover : Sophscreen,
-        images : [
-              Sophmain,
-              Sophlogin,
-              Sophedition,
-              Sophmodale
-        ],
-        description: 'Site realisé en HTML5, CSS3 et JavaScript pour une architcte (Sophie bluel) montrant ces ouvres en plus il y a une page utilisateur où la propretere du site eut odifier les images present sur le site',
-        competences : ['fetch','requetes HTTP', 'swagger'],
-        problems: 'creation de la modale et la dynamicité su site resolu avec addEventListener  ',
-        link:'https://github.com/Manadev5/Projet-architecte.git'
-
+        id :'5',
+        title : "Dating App",
+        cover : libmain,
+        description: "Projet réalisé pour un client, ayant comme but d'avoir un site de rencontre CSP+ avec un système de recherche et validation des profils, un système de paiement et une messagerie fonctionnelle",
+        competences : ['Symfony', 'Anguar', 'Api-platform', 'mysql', 'mercure', 'stripe'],
+        problems: 'Gestion des controlleurs appartenatns aux routes resolu avec le propriété de resonses et requete',
+        link:'https://github.com/DonkeySchool/datingApp'
     },
     {
         id:'3',
@@ -63,8 +41,8 @@ export const Datas  = [
               kasapropos,
               kasalogement
         ],
-        description : "Site créé avec React.js contenant aussi de animations et l'utilisation du scss pour le style, le site donne la posibilité au privé de voir et de louér des appartements",
-        competences :['React.js', 'Hooks', 'SCSS', 'Animations'],
+        description : "Site créé avec ReactJs contenant aussi des animations et l'utilisation du CSS pour le style, le site donne la possibilité au privé de voir et de louer des appartements",
+        competences :['Reactjs', 'Hooks', 'SCSS', 'Animations', 'NodeJs'],
         problems:'Gestion des composants avec les pages dsu site resolu avec les props et avec les state',
         link:'https://github.com/Manadev5/Projet-Kasa.git'
 
@@ -79,19 +57,42 @@ export const Datas  = [
              libcreate,
              liblivre
         ],
-        description: "Site appartenant à une bibliothéque 'Mon vieux grimore' réalisé de coté  backend en JavaScript, en partant dans le frontend  réalisé en React.js",
-        competences : ['Node JS', 'sqlite', 'sequelize', 'multer'],
+        description: "Site appartenant à une bibliothèque 'Mon vieux grimoire' réalisé de côté  backend en JavaScript, en partant dans le frontend  réalisé en Reactjs",
+        competences : ['NodeJS', 'sqlite', 'sequelize', 'multer', 'ReactJs'],
         problems: 'Gestion des controlleurs appartenatns aux routes resolu avec le propriété de resonses et requete',
         link:'https://github.com/Manadev5/Projet-architecte.git'
     },
     {
-        id :'5',
-        title : "Dating App",
-        cover : libmain,
-        description: "Site appartenant à une bibliothéque 'Mon vieux grimore' réalisé de coté  backend en JavaScript, en partant dans le frontend  réalisé en React.js",
-        competences : ['Symfony', 'Anguar', 'Api-platform', 'mysql', 'mercure', 'stripe'],
-        problems: 'Gestion des controlleurs appartenatns aux routes resolu avec le propriété de resonses et requete',
+        id: '1',
+        title : 'Site Booki : Agence des voyages',
+        cover : bookimain,
+        images : [
+            bookimain,
+              bookicenter,
+              bookifooetr,
+              bookiheader
+        ],
+        description: 'Site créé en HTML5 et CSS3 représentant une agence de voyages, on peut voir les hébergements disponibles à Marseille avec leur notation et la popularité',
+        competences : [ 'HTML5', 'figma', 'responsive design', 'CSS3'],
+        problems: 'disposition et mise en place dans la section des cartes resolu avec display gird et flex',
+        link:'https://github.com/Manadev5/Projet-booki.git'
+    },
+    {
+        id :'2',
+        title : 'Portfolio architecte Sophie Bluel',
+        cover : Sophscreen,
+        images : [
+              Sophmain,
+              Sophlogin,
+              Sophedition,
+              Sophmodale
+        ],
+        description: 'Site réalisé en HTML5, CSS3 et JavaScript pour une architecte (Sophie Bluel) montrant ses œuvres. En plus, il y a une page utilisateur où la propreté du site doit modifier les images présentes sur le site',
+        competences : ['requetes HTTP', 'api-swagger', 'JavaScript', 'NodeJs'],
+        problems: 'creation de la modale et la dynamicité su site resolu avec addEventListener  ',
         link:'https://github.com/Manadev5/Projet-architecte.git'
+
     }
+    
 ]
 
