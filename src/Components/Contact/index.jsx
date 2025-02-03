@@ -3,7 +3,7 @@ import github from '../../Assets/git-hub.png';
 import linkedin from '../../Assets/linkedin.png';
 import mail from '../../Assets/logo-email.png';
 import telephone from '../../Assets/logo-telephone.png';
-import  emailjs  from '@emailjs/browser';
+import emailjs  from '@emailjs/browser';
 
 function Contact(){
 

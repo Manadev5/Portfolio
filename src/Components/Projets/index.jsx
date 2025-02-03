@@ -25,6 +25,7 @@ const ListItem = ({ data }) => {
               <li>{data}</li>
             ))}
           </ul>
+          <img src={data.cover} alt={data.title}/>
           <a href={data.link} target="blank">voir sur github</a>
         </div>
       <div className="line-blue"></div>

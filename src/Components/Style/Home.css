@@ -40,19 +40,15 @@ nav ul{
 }
 
 nav li a{
-    border: solid rgba(3, 5, 245, 0.8) 2px;
-    border-radius: 25px;
-    padding: 10px;
-    color: rgba(3, 5, 245, 0.93);
+    color: rgba(7, 7, 147, 1);
     text-decoration: none;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
 nav li a:hover{
-    color: white;
-    background-color: rgba(3, 5, 245, 0.8);
     text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 #Accueil{
@@ -198,7 +194,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgba(3, 5, 245, 0.93);
+    background-color:rgba(7, 7, 147, 1);
     padding-bottom: 5%;
 }
 
@@ -296,13 +292,20 @@ h1{
 .details a, .details-none a{
     text-align: center;
     font-size: 18px;
-    color: rgba(3, 5, 245, 0.93);
+    color: rgba(7, 7, 147, 1);
     text-decoration: none;
     padding-top: 50px;
 }
 
 .details a:hover{
     text-decoration: underline;
+}
+
+.details img, .details-none img{
+    width: 410px;
+    height: 570px;
+    margin-left: 20%;
+    margin-top: 50px;
 }
 
 .projects-list{
@@ -326,9 +329,9 @@ h1{
 }
 
 .comp-list li{
-    border: solid 1px rgba(3, 5, 245, 0.93);
+    border: solid 1px rgba(7, 7, 147, 1);
     border-radius: 25px;
-    background-color: rgba(3, 5, 245, 0.93);
+    background-color: rgba(7, 7, 147, 1);
     color: white;
     height: fit-content;
     padding: 10px;
@@ -347,11 +350,11 @@ h1{
 
 .fa-plus, .fa-minus{
     font-size: 30px;
-    color:rgba(3, 5, 245, 0.93);
+    color:rgba(7, 7, 147, 1);
 }
 
 .blueline{
-    border-bottom: solid 4px rgba(3, 5, 245, 0.93);
+    border-bottom: solid 4px rgba(7, 7, 147, 1);
 }
 
 .description{
@@ -399,8 +402,7 @@ h1{
 
 footer{
     padding-top: 3%;
-    background-color: rgba(3, 5, 245, 0.93);
-  
+    background-color: rgba(7, 7, 147, 1); 
 }
 
 footer h2{
@@ -435,6 +437,8 @@ footer h2{
     outline: none;
     width: 35%;
     margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #contact-form input::placeholder, #contact-form textarea::placeholder{
@@ -447,6 +451,8 @@ footer h2{
     font-size: 20px;
     outline: none;
     width: 35%;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .submit {
@@ -456,7 +462,7 @@ footer h2{
     border: solid white 2px;
     border-radius: 25px;
     padding: 10px;
-    color: rgba(3, 5, 245, 0.93);
+    color: rgba(7, 7, 147, 1);
     font-size: 20px;
     margin-top: 10px;
     cursor: pointer;
@@ -466,7 +472,7 @@ footer h2{
   
   .ripple {
     position: absolute;
-    background: rgba(3, 5, 245, 0.3);
+    background: rgba(7, 7, 147, 1);
     border-radius: 50%;
     transform: scale(0);
     width: 150px;
@@ -558,28 +564,59 @@ footer h2{
 
 }
 
-@media(max-width:550px) {
+@media(max-width:450px) {
     header{
         display: none;
         
     }
 
     #Accueil{
-        height: 600px;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin-top: 0;
     }
 
     #Accueil h1{
     margin-left: 15px;
+    margin-bottom: 5px;
     font-size: 55px;
     }
 
-   .titre-2, .titre-3{
+    .text-block p{
+        width: 300px;
+        font-size: 25px;
+    }
+
+    .github {
+        width: 20%; 
+    }
+
+   .titre-2, .titre-3, #projets h2, footer h2{
     font-size: 30px;
    }
 
-    #A-propos img{
-        margin-left: 31%;
-    }
+   #A-propos {
+    height: 900px;
+   }
+
+   #A-propos .propos-block{
+        flex-direction: column;
+   }
+
+   #A-propos img{
+    margin-left: 0;
+    width: 250px;
+    height: 250px;
+   }
+
+   #A-propos p{
+    width: 100%;
+    margin-left: 0;
+    font-size: 20px;
+   }
+
 
     #Competences{
         flex-direction: column;
@@ -600,27 +637,30 @@ footer h2{
         margin-bottom: 20px;
     }
 
-    .content p{
-        width: 50%;
-    }
-
-    .content h4,.content h3{
-        font-size: 20px;
-    }
-
-    .slider{
-        margin-left: 8%;
-        text-align: center;
-    }
-
-    .image-slider{
-        width: 300px;
-        height: 500px;
+    .block-1{
+        border-right: none;
     }
 
     .block-2 ul{
         padding: 0;
 
+    }
+
+    .full-item {
+        width: 350px;
+    }
+
+    .projects-list{
+        align-items: normal;
+    }
+
+    .comp-list {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .comp-list li {
+        list-style: none;
     }
 
     #contacts{

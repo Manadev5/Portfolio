@@ -25,7 +25,7 @@ export const Datas  = [
     {
         id :'5',
         title : "Dating App",
-        cover : libmain,
+        cover : "",
         description: "Projet réalisé pour un client, ayant comme but d'avoir un site de rencontre CSP+ avec un système de recherche et validation des profils, un système de paiement et une messagerie fonctionnelle",
         competences : ['Symfony', 'Anguar', 'Api-platform', 'mysql', 'mercure', 'stripe'],
         problems: 'Gestion des controlleurs appartenatns aux routes resolu avec le propriété de resonses et requete',
