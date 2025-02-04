@@ -21,11 +21,14 @@ import liblogin from '../Assets/screen-librarie/connexion.png';
 import libcreate from '../Assets/screen-librarie/creation.png';
 import liblivre from '../Assets/screen-librarie/livre.png';
 
+import datingHome from '../Assets/dating-app.png';
+import datingFill from '../Assets/deman.png';
+
 export const Datas  = [
     {
         id :'5',
         title : "Dating App",
-        cover : "",
+        cover : datingHome,
         description: "Projet réalisé pour un client, ayant comme but d'avoir un site de rencontre CSP+ avec un système de recherche et validation des profils, un système de paiement et une messagerie fonctionnelle",
         competences : ['Symfony', 'Anguar', 'Api-platform', 'mysql', 'mercure', 'stripe'],
         problems: 'Gestion des controlleurs appartenatns aux routes resolu avec le propriété de resonses et requete',
