@@ -571,7 +571,7 @@ footer h2{
     }
 
     #Accueil{
-    height: 650px;
+    height: 700px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -585,7 +585,7 @@ footer h2{
     }
 
     .text-block{
-        padding-top: 25%;
+        padding-top: 30%;
     }
 
     .text-block p{
@@ -602,7 +602,7 @@ footer h2{
    }
 
    #A-propos {
-    height: 900px;
+    height: auto;
    }
 
    #A-propos .propos-block{
@@ -655,7 +655,8 @@ footer h2{
     }
 
     .projects-list{
-        align-items: normal;
+        align-items: center;
+        padding-left: 0;
     }
 
     .comp-list {
